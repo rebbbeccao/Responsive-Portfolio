@@ -1,0 +1,396 @@
+* {
+	box-sizing: border-box;
+}
+
+body {
+	background-image: url('file:///Users/rebeccaao/UCIallgitrepositories/Basic_Portfolio/Assets/Images/background.png');
+	background-repeat: repeat;
+	font-size: 18px;
+	line-height: 34px;
+	font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif; 
+	color: #777;
+}
+
+#main-container {
+	width: 100%;
+	max-width: 960px;
+	margin: 0 auto;
+	clear: both;
+	margin-top: 40px;
+}
+
+h1, h2, h3, p {
+	margin-bottom: 20px;
+}
+
+p:last-child {
+	margin-bottom: 0;
+}
+
+h1, h2, h3 {
+	font-family: 'Georgia', Times, Times New Roman, serif;
+	font-weight: 700;
+	color: #4aaaa5;
+}
+
+/*About me 
+*/h1 {
+	font-size: 30px;
+	line-height: 49px;
+	border-bottom: 3px solid #ddd;
+	padding-bottom: 20px;
+}
+
+/*Connect with Me
+*/h2 {
+	border-bottom: 3px solid #ddd;
+	padding-bottom: 20px;
+}
+
+h2, h3 {
+	font-size: 22px;
+}
+
+/*header*/
+#masthead {
+	background: #fff;
+	margin: 0 0 30px;
+	z-index: 99;
+	color: #fff;
+	overflow: auto;
+	border-bottom: 2px solid #ccc;
+	width: 100%;
+}
+/*Rebecca A. Olson
+*/#logo {
+	width: 250px;
+	height: 90px;
+	background: #4aaaa5;
+	float: left;
+	font-family: 'Georgia', Times, Times New Roman, serif;
+	text-align: center;
+	line-height: 90px;
+	color: #fff;
+	font-weight: 700;
+	font-size: 24px;
+	text-decoration: none;
+	margin-left: 150px;
+}
+
+nav {
+	float: right;
+	margin-top: 25px;
+}
+
+nav a { 
+	color: #999;
+	text-decoration: none;
+	margin-left: 15px;
+	display: inline-block;
+	border-left: 1px solid #efefef;
+	padding-left: 15px;
+	line-height: 18px;
+	}
+
+nav a:first-child {
+	border-left: 0 none;
+}
+
+nav a:last-child {
+	margin-right: 220px;
+}
+
+/*footer
+*/footer {
+	background: #666;
+	color: #fff;
+	padding: 30px 0;
+	clear: both;
+	border-top: 8px solid #4aaaa5;
+	color: #ccc;
+	font-size: 12px;
+	text-align: center;
+}
+
+
+p {
+	width: 560px;
+}
+
+#contact-form {
+	margin-top: 20px;
+	margin-bottom: 20px;
+	box-sizing: border-box;
+}
+
+
+h3, .main-section, h2 {
+	border-bottom: 2px solid #eee;
+	padding-bottom: 20px;
+	margin-bottom: 20px;
+}
+
+
+.main-section {
+	background: #fff;
+	padding: 30px;
+	margin-top: 10px;
+	margin-bottom: 40px;
+	width: 100%;
+	max-width: 630px;
+	border: 1px solid #ddd;
+	float: left;
+}
+
+#Sidebar {
+	float: right;
+}
+
+
+.social {
+	width: 62px;
+	height: 62px;
+	margin-top: 8px;
+	margin-right: 5px;
+}
+
+.social:last-child {
+	margin-right: 0;
+}
+
+
+#connect {
+	background: #fff;
+	width: 100%;
+	max-width: 270px;
+	height: auto;
+	padding: 30px;
+	margin-right: 25px;
+	margin: 10px 0 40px 0;
+	border: 1px solid #ddd;
+	box-sizing: border-box;
+}
+
+.auth-image {
+	width: 40%;
+	height: auto;
+	margin-top: 10px;
+	float: left;
+	margin-right: 25px;
+}
+
+
+
+
+	/*Portfolio*/
+
+.work {
+	width: 260px;
+	overflow: auto;
+	position: relative;
+	float: left;
+	margin: 20px 0 25px;
+}
+
+.work:nth-child(even) {
+	margin-right: 40px;
+}
+
+.work img {
+	width: 100%;
+	border: 0 none;
+	opacity: .8;
+}
+
+.work h3 {
+	border-bottom: 0;
+	background: #4aaaa5;
+	color: #fff;
+	text-align: center;
+	position: absolute;
+	bottom: 20px;
+	padding: 15px;
+	width: 100%;
+	line-height: 30px;
+	margin-bottom: 300;
+}
+
+/*Contact*/
+#contact-form ul {
+	margin-bottom: 20px;
+}
+
+#contact-form li {
+	margin-bottom: 10px;
+}
+
+label,
+input[type=text],
+input[type=email],
+textarea {
+	display: block;
+	width: 100%;
+}
+
+input[type=text],
+input[type=email],
+textarea {
+	height: 35px;
+	border: 1px solid #ddd;
+	padding: 0 10px;
+	font-size: 14px;
+}
+
+textarea {
+	height: 200px;
+}
+
+input[type=submit] {
+	background: #4aaaa5;
+	border: 0 none;
+	color: #fff;
+	font-size: 18px;
+	padding: 10px 30px;
+	cursor: pointer;
+}
+
+/*Media Query's Here!*/
+
+@media screen and (max-width: 980px) {
+
+	#main-container {
+		padding-left: 115px; 
+		padding-right: 115px;
+	}
+	
+	.main-section { 
+		width: 420px;
+	 }
+
+	 p {
+	 	width: 350px;
+	 	height: auto;
+	 }
+
+	 .auth-image {
+	 	width: 300px;
+	 }
+
+	 .work {
+	 	width: 340px;
+	 }
+} 
+
+
+
+
+@media screen and (max-width: 768px) {
+	
+	.container {
+		width: 100%;
+	    max-width: 100%;
+	    padding-left: 0;
+	    padding-right: 0;
+	}
+
+	#main-container {
+		padding-left: 20px;
+		padding-right: 20px;
+	}
+	
+	.main-section {
+		width: 100%;
+		max-width: 722px
+		
+
+	}
+
+	#Sidebar {
+		float: left;
+		width: 100%;
+		padding-right: 1px;
+	}
+
+	#connect {
+		width: 100%;
+		max-width: 100%;
+	}
+
+	p {
+		width: 100%
+	}
+	
+	#logo {
+		margin-left: 0px;
+		margin-right:0px;
+	}
+
+	#masthead {
+		padding-left: 3px;
+	}
+
+	nav a:last-child {
+		margin-right: -30px;
+	}
+
+	.work {
+		width: 300px;
+	}
+}
+
+
+@media screen and (max-width: 640px) {
+
+	#main-container {
+		padding-left: 20px;
+		padding-right: 20px;
+	}
+
+	/*#mast-head {
+		padding-bottom: 50px;
+	}*/
+
+	.work {
+		width: 100%;
+	}
+	
+	.auth-image {
+		width: 100%;
+		padding-left: 5px;
+		padding-right: 5px;
+		margin-bottom: 12px;
+	}
+ 
+	
+
+
+ 	#logo {
+ 		width: 100%;
+ 		font-size: 35px;
+
+ 		
+
+ 	}
+	nav {
+		float: left;
+		width: 100%;
+		text-align: center;
+
+	}
+
+	#masthead {
+		padding-bottom: 23px;
+		width: 100%;
+		max-width: 640px;
+		padding-left: 0;
+
+	}
+
+	nav a {
+	padding-right: 25px;
+
+	
+	}
+}	
+
+
